@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapez</title>
+    <link rel="stylesheet" href="./Styles/index.css">
+    <script type="module" defer src="./Script/index.js"></script>
+    <script type="module" defer src="./Script/canvas_controls.js"></script>
+</head>
+<body>
+    <div id="Canvas_Container">
+        <canvas></canvas>
+    </div>
+    <div id="Title_Container">
+        <div class="Glitch"><h1 class="Title Cyan">SHAPEZ</h1></div>
+        <div class="Glitch"><h1 class="Title Magenta">SHAPEZ</h1></div>
+        <div class="Glitch"><h1 class="Title Black">SHAPEZ</h1></div>
+    </div>
+
+    <div id="Form_Container">
+        <form id="creationForm">
+            <div id="name_block">
+                <div class="Form_Element">
+                    <label for="name">Name:</label>
+                    <input required type="text" name="name" id="name" class="inputField"/>
+                </div>
+                <p id="name_error" class="error_text" style="display: none;">Name has to be less than 20 characters</p>
+            </div>
+
+            <div id="color_block">
+                <div class="Form_Element">
+                    <label for="color">Favorite Color:</label>
+                    <input required type="text" name="color" id="color" class="inputField" />
+                </div>
+                <p id="color_error" class="error_text" style="display: none;">Color has to be less than 20 characters</p>
+            </div>
+
+            <div class="Form_Element">
+                <fieldset>
+                    <legend>Pick one:</legend>
+                    <div>
+                    <input required type="radio" name="shape" class="Shape_Selector" id="triangle" value="triangle" />
+                    <label for="triangle">Triangle</label>
+                    </div>
+
+                    <div>
+                    <input required type="radio" name="shape" class="Shape_Selector" id="square" value="square" />
+                    <label for="square">Square</label>
+                    </div>
+
+                    <div>
+                    <input required type="radio" name="shape" class="Shape_Selector" id="circle" value="circle" />
+                    <label for="circle">Circle</label>
+                    </div>
+
+                    <div>
+                    <input required type="radio" name="shape" class="Shape_Selector" id="star" value="star" />
+                    <label for="star">Star</label>
+                    </div>
+                </fieldset>
+            </div>
+            <input id="submitButton" type="submit" value="Join the Mass" />
+        </form>
+    </div>
+    <footer>
+        
+    </footer>
+
+
+</body>
+</html>
