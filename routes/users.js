@@ -28,7 +28,6 @@ router.post("/", async (req, res) => {
         res.send(newUser);
     } else {
         throw new Error("User Failed validation");
-        //res.status = 
     }
 
 });
